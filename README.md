@@ -434,7 +434,7 @@ while P<.011
   end
   pop=pop+1
    end  
-  MEthane=(pop-1)*2/avag;
+  Ethane=(pop-1)*2/avag;
   Mlattice=MEthane+dens*Vlattice*1000;
   teta(ii)=(MEthane/Mlattice)*100
   Pressure(ii)=P
