@@ -156,39 +156,8 @@ deltaY=-1;
 while deltaY<0
 
 #Generating initial population
-           i=0;
-           Iflag=0;
-          while i<pop
-                  if Iflag==0
-                    i=i+1;
-                  end
-          Iflag=0;
-          TEHS=0;
-          TEHO=0;
-          TEHH=0;
-     %generating  random CHROMOSOME 
-             for j=1:nbit
-                rd=rand();
-                   if rd>.5
-                   cr(i,j)=1;
-                   else 
-                   cr(i,j)=0;
-                   end
-          end
-         %Transfer CHROMOSOME to X Y Z
-          sx=0;
-          for k=1:(nbit1) 
-             sx=cr(i,k)*2^((nbit1)-k)+sx;
-          end
-          x(i)=mind(1,1)+(sx/maxdec1)*(maxd(1,1)-mind(1,1));
-          sy=0;
-          for k=(nbit1)+1:nbit2+nbit1
-             sy=cr(i,k)*2^(nbit2+nbit1-k)+sy;
-          end
-           y(i)=mind(1,2)+(sy/maxdec2)*(maxd(1,2)-mind(1,2));
-          sz=0;
-          for k=nbit2+nbit1+1:nbit
-             sz=cr(i,k)*2^(nbit-k)+sz;
-          end
-          z(i)=mind(1,3)+(sz/maxdec3)*(maxd(1,3)-mind(1,3));
-    
+               
+ #generating  random CHROMOSOME 
+             
+ #Transfer CHROMOSOME to X Y Z
+          
