@@ -179,8 +179,13 @@ Calculate chemical potential from an Equation of States
  
  Add new Chromosomes
  
- end
+# step 6
  
   increase Pressure
  
- end
+# step 7 
+
+calculate gas uptake
+
+# step 8
+Plot pressure vs. Gas uptake
