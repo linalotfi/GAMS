@@ -15,7 +15,7 @@ minpop=2;
 
 pop=minpop;
 
-# an exapmle : critcal point Of Ethane
+# An exapmle : critical point Of Ethane
 
 TC=305.5;   %K
 
@@ -26,7 +26,7 @@ w=.099;
 R=82.056e-6;%atm.m3/gmol.K
 
 
-#Temprature & Pressure &...
+# Temprature & Pressure &...
 
 P=.001;%bar
 
@@ -41,20 +41,20 @@ beta=1/(KB*T);
 Rg=8.314;
 %J/gmole.K
 
-#parameter of Genetic Algoritm can specify by the following codes
+# parameter of Genetic Algoritm can specify by the following codes
 
 pc=.5;%Probability of cross over
 
 pm=.2;%Probability of mutation
 
 
-#parameters of LJ potential For H-SIOX
+# parameters of LJ potential For H-SIOX
 
 eps=[82.9848 44.2697 9.17;44.2697 23.6164 48.1;90.17 48.1 98];
 
 sigma=[3.3 3.72 3.51;3.72 4.2 3.96;3.51 3.96 3.75];%K
 
-#Structure of Adsorbent
+# Structure of Adsorbent
 
 mind=zeros(1,3);
 
@@ -65,7 +65,7 @@ for j=1:3
 end
 
 
-#Accuracy of structure of lattice
+# Accuracy of structure of lattice
 
 accrx=0.001;
 
@@ -79,7 +79,7 @@ dy=(maxd(1,2)-mind(1,2))/accry;
 
 dz=(maxd(1,3)-mind(1,3))/accrz;
 
-#number of bits of X Y Z
+# number of bits of X Y Z
 
 nbit1=1;
 
@@ -123,7 +123,7 @@ dz=n3;
 
 end
 
-#Lattice
+# Lattice
 
 avag=6.023e23;% avagadro number
 
@@ -155,27 +155,27 @@ deltaY=-1;
 
 while deltaY<0
  
- Step 1
+ # Step 1
  
-Generating initial population
+ Generating initial population
                
-Generating  random CHROMOSOME 
+ Generating  random CHROMOSOME 
              
-Transfer CHROMOSOME to X Y Z
+ Transfer CHROMOSOME to X Y Z
 
-Step 2
+# Step 2
 
 Calculate Toltal Energy
 
-Step 3
+# Step 3
 
 Calculate chemical potential from an Equation of States
 
-Step 4
+# Step 4
   
   Calculate Fitness Function
   
-Step 5 
+# Step 5 
  
  Add new Chromosomes
  
