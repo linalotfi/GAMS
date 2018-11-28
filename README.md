@@ -3,19 +3,19 @@ genetic algorithm in molecular simulation
 
 #Lattice Must import to Code
 
-#number of adsorbent atoms
+# Determine number of adsorbent atoms 
 
 nox=length(OX(:,1));
 
 nsi=length(SI(:,1));
 
-#number of initial population
+# specify number of initial population
 
 minpop=2;
 
 pop=minpop;
 
-#critcal point Of Ethane
+# an exapmle : critcal point Of Ethane
 
 TC=305.5;   %K
 
@@ -41,7 +41,7 @@ beta=1/(KB*T);
 Rg=8.314;
 %J/gmole.K
 
-#parameter of GA
+#parameter of Genetic Algoritm can specify by the following codes
 
 pc=.5;%Probability of cross over
 
@@ -60,7 +60,7 @@ mind=zeros(1,3);
 
 for j=1:3
 
-    maxd(j)=max(OX(:,j));
+   maxd(j)=max(OX(:,j));
 
 end
 
@@ -149,15 +149,38 @@ maxdec3=2^nbit3-1;
 
 ii=1;
 
-while P<.011
+while P<Pmax
 
 deltaY=-1;
 
 while deltaY<0
-
-#Generating initial population
+ 
+ Step 1
+ 
+Generating initial population
                
- #generating  random CHROMOSOME 
+Generating  random CHROMOSOME 
              
- #Transfer CHROMOSOME to X Y Z
-          
+Transfer CHROMOSOME to X Y Z
+
+Step 2
+
+Calculate Toltal Energy
+
+Step 3
+
+Calculate chemical potential from an Equation of States
+
+Step 4
+  
+  Calculate Fitness Function
+  
+Step 5 
+ 
+ Add new Chromosomes
+ 
+ end
+ 
+  increase Pressure
+ 
+ end
